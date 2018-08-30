@@ -20,7 +20,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > - show current working directory path = pwd
+> > - creating a directory = mkdir
+> > - deleting a directory = rm -r OR rmdir
+> > - creating a file using `touch` command = touch abc.txt
+> > - deleting a file = rm abc.txt
+> > - renaming a file = rename a.txt b.txt
+> > - listing hidden files = ls -a
+> > - copying a file from one directory to another cp a.txt location/
+> > - list files and details = ls -l
+> > - chmod = change access permissions
 
 ---
 
@@ -35,7 +44,19 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > List files
+> >
+> > List all files, including hidden
+> >
+> > List files in long format
+> >
+> > list files in long format with sizes in human readable format
+> >
+> > list all files, including hidden, in long format with sizes in human readable format
+> >
+> > list files in order of most recently modified
+> >
+> > list files with file type added, color coded, and nature of file appended
 
 ---
 
@@ -43,7 +64,13 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > | Option | Description                                                  |
+> > | ------ | ------------------------------------------------------------ |
+> > | -g     | Displays the long format listing, but exclude the owner name. |
+> > | -o     | Displays the long format listing, but excludes group name.   |
+> > | -p     | Displays directories with **/**                              |
+> > | -R     | Displays subdirectories as well.                             |
+> > | -t     | Displays newest files first. (based on timestamp)            |
 
 ---
 
@@ -51,7 +78,13 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Xargs is a command line utility for building an execution pipeline from standard input.
+> >
+> > In other words, it allows functions that cannot normally use standard input to do so.
+> >
+> > useful examples: using rm on all files that contain a specific string in the filename, or within a specific timeframe
+> >
+> > find . -mtime +14  | xargs rm (deletes all files older than 2 weeks in current folder)
 
  
 
